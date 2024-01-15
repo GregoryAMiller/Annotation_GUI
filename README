@@ -1,0 +1,22 @@
+This Python program is used in labeling images for machine learning applications.
+The format of the label files that are created from this gui are in yolov8 txt file format with normalized values (label center of bounding box x,y and height, width of boudning box normalized from image size)
+
+Example of label: person 0.4791666666666667 0.4911111111111112 0.1 0.3777777777777778
+
+HOW TO RUN:
+    - Run annotation_gui.py file
+    - Select directory where your images to be labeled are located
+
+Button Functionality:
+    - Go To: Enter a number and go to that index of the image
+    - Previous: Go to the previous image
+    - Skip: Go to the next image
+    - Delete: Deletes the current image from the directory
+    - Reset Current Box: Resets the current bounding box placement
+    - Reset Previous Box: Resets the previous bounding box placement (can be used to delete all bounding boxes)
+    - Reset All Boxes: Resets all bounding boxes placed
+    - Undo Last Label: Deletes the last label file created and displays the previous image for labeling
+    - Confirm: Confirm current placed bounding boxes and creates label file and displays next image
+
+Hopefully will add in the future:
+    - label file format: add more formats for label format other than yolov8 txt normlized format. Such as type of file other than txt. How the coordinates of the bounding box are stored (currently center of bounding box x,y and height, width of boudning box normalized from image size)
